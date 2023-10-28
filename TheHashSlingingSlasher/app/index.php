@@ -1,3 +1,7 @@
+<?php
+    ob_start();
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -86,7 +90,6 @@
             </div>
         </form>
         <?php
-            session_start();
             if (isset($_POST['submit'])) {
 
                 $strings = $_POST['string'];
